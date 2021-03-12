@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { contactDeletter, contactEditter, favoriteAdder, edittFormToggler } from '../redux/userStates/action'
+import { contactEditter, edittFormToggler } from '../redux/userStates/action'
 
 const EdittForm = (props) => {
 
@@ -30,12 +30,12 @@ const EdittForm = (props) => {
         if(content.name !== '' && content.number !== ''){
             dispatch(contactEditter(content, props.index))
             alert('contact created successfully!')
-        }else if(content.name == '' && content.number == ''){
+        }else if(content.name === '' && content.number === ''){
             alert('number and name fileds are required')
         }
-        else if(content.name == ''){
+        else if(content.name === ''){
             alert('name filed is required')
-        }else if(content.number == ''){
+        }else if(content.number === ''){
             alert('number filed is required')
         }
     }

@@ -1,5 +1,4 @@
 import React from 'react'
-import closeBtn from './assets/x.png';
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import {contactAdder} from '../redux/userStates/action'
@@ -31,12 +30,12 @@ const AddTodoForm=({active, activeToggle})=> {
         if(content.name !== '' && content.number !== ''){
             dispatch(contactAdder(content))
             alert('contact created successfully!')
-        }else if(content.name == '' && content.number == ''){
+        }else if(content.name === '' && content.number === ''){
             alert('number and name fileds are required')
         }
-        else if(content.name == ''){
+        else if(content.name === ''){
             alert('name filed is required')
-        }else if(content.number == ''){
+        }else if(content.number === ''){
             alert('number filed is required')
         }
     }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { contactDeletter, contactEditter, favoriteAdder, edittFormToggler } from '../redux/userStates/action'
+import { contactDeletter, favoriteAdder, edittFormToggler } from '../redux/userStates/action'
 import heart from './assets/heart.png'
 import filledHeart from './assets/filledheart.png'
 import EdittForm from './EdittForm'
@@ -38,14 +38,14 @@ const ContactItem = (props) => {
                     {/* for unfilled heart */}
                     {!props.fav &&
                         <div className="Heart">
-                            <img src={heart} onClick={()=> dispatch(favoriteAdder(props.index))} />
+                            <img src={heart} onClick={()=> dispatch(favoriteAdder(props.index))} alt=""/>
                         </div>
                     }
 
                     {/* for filled heart */}
                     {props.fav &&
                         <div className="Heart">
-                            <img src={filledHeart} onClick={()=> dispatch(favoriteAdder(props.index))} />
+                            <img src={filledHeart} onClick={()=> dispatch(favoriteAdder(props.index))} alt=""/>
                         </div>
                     }
                 </>
