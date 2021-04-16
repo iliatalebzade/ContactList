@@ -5,9 +5,8 @@
 h1 {
   color: #eee;
   border-radius: 3px;
-background: #ff503d;
-box-shadow: inset 6px 6px 12px #c23d2e,
-            inset -6px -6px 12px #ff634c;
+  background: #ff503d;
+  box-shadow: inset 6px 6px 12px #c23d2e, inset -6px -6px 12px #ff634c;
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
@@ -18,7 +17,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
 .contactItem {
   position: relative;
   padding: 20px;
-  color:rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
   display: flex;
   flex-direction: column;
   margin: 20px 0;
@@ -26,8 +25,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   border-radius: 8px;
   background: #e0e0e0;
   animation: normal contentCard 200ms;
-  box-shadow:  12px 12px 24px #bebebe,
-              -12px -12px 24px #ffffff;
+  box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
 }
 
 .contactItem ul li {
@@ -35,7 +33,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   margin: 10px 0;
   font-family: sans-serif;
   font-weight: bold;
-  color:rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
 }
 
 .btngroup button {
@@ -50,27 +48,25 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   border-radius: 3px;
   transition-duration: 300ms;
   background: #e0e0e0;
-  box-shadow: inset 3px 3px 5px #bebebe,
-              inset -3px -3px 5px #ffffff;
+  box-shadow: inset 3px 3px 5px #bebebe, inset -3px -3px 5px #ffffff;
 }
 
 .btngroup button:hover {
   border-radius: 3px;
   color: #fff;
   background: #ff503d;
-  box-shadow: inset 5px 5px 4px #c23d2e,
-              inset -5px -5px 4px #ff634c;
+  box-shadow: inset 5px 5px 4px #c23d2e, inset -5px -5px 4px #ff634c;
   transition-duration: 300ms;
 }
 
 .emptyInfo {
   padding: 20px;
+  margin: 20px 0;
   border-radius: 8px;
   border-radius: 8px;
   background: #e0e0e0;
-  box-shadow:  10px 10px 20px #bebebe,
-              -10px -10px 20px #ffffff;
-  animation: normal noInfoCard 200ms;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+  transition-duration: 300ms;
   color: rgb(44, 44, 44);
 }
 
@@ -83,8 +79,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   display: inline-block;
   border-radius: 4px;
   background: #e0e0e0;
-  box-shadow: inset 3px 3px 5px #bebebe,
-              inset -3px -3px 5px #ffffff;
+  box-shadow: inset 3px 3px 5px #bebebe, inset -3px -3px 5px #ffffff;
 }
 
 .addBtn {
@@ -112,7 +107,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
 }
 
 .addBtn::after {
-  content: '';
+  content: "";
   transition-duration: 300ms;
   width: 0;
   height: 0;
@@ -128,14 +123,12 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   transition-duration: 300ms;
   border-radius: 50%;
   background: #eeeeee;
-  box-shadow:  5px 5px 10px #cacaca,
-              -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
 }
 
 .addBtn:hover {
   background: #eeeeee;
-  box-shadow:  5px 5px 10px #cacaca,
-              -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #cacaca, -5px -5px 10px #ffffff;
   transition-duration: 300ms;
   color: #ff503d;
   background-color: #eee;
@@ -155,11 +148,11 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   flex-direction: column;
 }
 
-.addForm h3{
+.addForm h3 {
   border-radius: 8px;
-  background: #e0e0e0;
-  box-shadow:  4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
-  color: #3f1515;
+  background: #ff503d;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+  color: #eee;
   margin-bottom: 10px;
   padding: 5px 8px;
   border-radius: 5px;
@@ -177,7 +170,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
 
 .addForm form input {
   margin: 10px 0;
-  padding: 8px 10px;
+  padding: 12px 10px;
   outline: none;
   background-color: #c23629;
   color: #eee;
@@ -188,38 +181,37 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   transition-duration: 300ms;
 }
 
-.addForm form input[type=text]{
+.addForm form input[type="text"] {
   width: 70%;
+  padding: ;
   border-radius: 8px;
   background: #e0e0e0;
-  box-shadow:  4px 4px 8px #bebebe,
-              -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
   color: #3f1515;
 }
 
-.addForm form input[type=text]:focus{
+.addForm form input[type="text"]:focus {
   transition-duration: 300ms;
   background-color: #ff503d;
   color: #fff;
 }
 
-.addForm form input[type=text]:focus::placeholder{
+.addForm form input[type="text"]:focus::placeholder {
   transition-duration: 300ms;
   color: #fff;
 }
 
-.addForm form input[type=submit]{
+.addForm form input[type="submit"] {
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 8px;
   border-radius: 8px;
   background: #e0e0e0;
-  box-shadow:  4px 4px 8px #bebebe,
-              -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
   color: #3f1515;
 }
 
-.addForm form input[type=submit]:hover{
+.addForm form input[type="submit"]:hover {
   background-color: #ff503d;
   color: #fff;
 }
@@ -259,7 +251,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
 }
 
 .closeBtn::after {
-  content: '';
+  content: "";
   transition-duration: 300ms;
   width: 0;
   height: 0;
@@ -290,20 +282,18 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   color: #3f1515;
 }
 
-
 .contactItem ul li span {
   color: rgb(99, 99, 99);
 }
 
-
 @keyframes shortanlong {
-  0%{
+  0% {
     width: 10%;
   }
-  50%{
+  50% {
     width: 120%;
   }
-  100%{
+  100% {
     width: 10%;
   }
 }
@@ -315,67 +305,60 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   padding: 20px;
 }
 
-.contactItem .Heart img{
+.contactItem .Heart img {
   width: 20px;
   cursor: pointer;
 }
 
-.selectListActive {
-  
-}
-
-.selectListActive form{
+.selectListActive form {
   display: flex;
   flex-direction: column;
   width: 200px;
 }
 
-.selectListActive form input{
+.selectListActive form input {
   margin: 10px 0;
   color: rgb(44, 44, 44);
   font-weight: bold;
 }
 
-.selectListActive form input::placeholder{
+.selectListActive form input::placeholder {
   color: rgb(44, 44, 44);
 }
-.selectListActive form input[type=text]{
+.selectListActive form input[type="text"] {
   padding: 6px 10px;
   outline: none;
   border: none;
   border-radius: 9px;
   background: #e0e0e0;
-  box-shadow: inset 4px 4px 7px #bebebe,
-              inset -4px -4px 7px #ffffff;
+  box-shadow: inset 4px 4px 7px #bebebe, inset -4px -4px 7px #ffffff;
   transition-duration: 300ms;
   color: rgb(44, 44, 44);
   color: rgb(44, 44, 44);
 }
 
-.selectListActive form input[type=text]:focus{
+.selectListActive form input[type="text"]:focus {
   border-radius: 9px;
   color: #fff;
   background: #ff503d;
-  box-shadow: inset 4px 4px 7px #d94434,
-              inset -4px -4px 7px #ff5c46;
+  box-shadow: inset 4px 4px 7px #d94434, inset -4px -4px 7px #ff5c46;
   transition-duration: 300ms;
 }
 
-.selectListActive h3{
+.selectListActive h3 {
   border-radius: 8px;
   background: #e0e0e0;
-  box-shadow:  3px 3px 7px #bebebe,
-              -3px -3px 7px #ffffff;
+  box-shadow: 3px 3px 7px #bebebe, -3px -3px 7px #ffffff;
   color: rgb(44, 44, 44);
   display: inline-block;
   padding: 10px;
 }
 
-.selectListActive form input[type=text]:focus::placeholder{
-  color: #fff
+.selectListActive form input[type="text"]:focus::placeholder {
+  color: #fff;
 }
 
-.selectListActive form input[type=submit]{
+.selectListActive form input[type="submit"] {
   width: 100px;
   border-radius: 8px;
   border: none;
@@ -384,11 +367,10 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   transition-duration: 300ms;
   border-radius: 8px;
   background: #e0e0e0;
-  box-shadow:  3px 3px 6px #bebebe,
-              -3px -3px 6px #ffffff;
+  box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
 }
 
-.selectListActive form input[type=submit]:hover{
+.selectListActive form input[type="submit"]:hover {
   background-color: #ff503d;
   color: #fff;
   transition-duration: 300ms;
@@ -396,10 +378,9 @@ box-shadow: inset 6px 6px 12px #c23d2e,
 
 .selectListActive h3 {
   margin: 10px 0;
-  
 }
 
-.editCloseBtnParent{
+.editCloseBtnParent {
   margin: 0px;
   width: 50px;
   display: flex;
@@ -428,7 +409,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
 }
 
 .editCloseBtn::after {
-  content: '';
+  content: "";
   transition-duration: 300ms;
   width: 0;
   height: 0;
@@ -447,13 +428,39 @@ box-shadow: inset 6px 6px 12px #c23d2e,
   transition-duration: 300ms;
   border-radius: 50%;
   background: #ff503d;
-  box-shadow: inset 4px 4px 7px #d94434,
-              inset -4px -4px 7px #ff5c46;
+  box-shadow: inset 4px 4px 7px #d94434, inset -4px -4px 7px #ff5c46;
   color: #fff;
 }
 
+.ActiveBtn {
+  background-color: #eee;
+  border: none;
+  padding: 7px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #c23629;
+  border-bottom: 4px solid #c23629;
+  cursor: pointer;
+  outline: none;
+  margin-right: 15px;
+}
+
+.DeactiveBtn {
+  background-color: #eee;
+  border: none;
+  padding: 7px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #c23629;
+  cursor: pointer;
+  outline: none;
+  margin-right: 15px;
+}
+
 @keyframes noInfoCard {
-  0%{
+  0% {
     margin-top: 50px;
   }
   100% {
@@ -462,7 +469,7 @@ box-shadow: inset 6px 6px 12px #c23d2e,
 }
 
 @keyframes contentCard {
-  0%{
+  0% {
     margin-top: 40px;
   }
   100% {

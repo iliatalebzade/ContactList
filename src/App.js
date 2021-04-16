@@ -1,28 +1,26 @@
 import './App.css'
-import {useSelector} from 'react-redux'
-import ContactItem from './components/ContactItem'
-import Addbtn from './components/Addbtn'
-
+import { useState } from 'react'
+import AllContacts from './components/AllContacts';
+import FavContacts from './components/FavContacts';
+import NavTabs from './components/NavTabs';
 
 const App = () => {
 
-  const userList = useSelector(state => state.users)
+  const [tabCon, setTabCon] = useState(true)
 
   return (
     <div className="App">
       <h1>Contacts</h1>
-      {userList.length > 0 &&
-        userList.map((item, index) => (
-          <ContactItem name={item.name} fav={item.fav} number={item.number} key={index} index={index} bingEdited={item.bingEdited}/>
-        ))
+      <NavTabs
+        tabCon={tabCon}
+        setTabCon={setTabCon}
+      />
+      {tabCon  === true &&
+        <AllContacts />
       }
-      {userList.length <= 0 &&
-        <div className="emptyInfo">
-          <h2>Nothing to show :(</h2>
-          <p>Try adding some!</p>
-        </div> 
+      {tabCon  === false &&
+        <FavContacts />
       }
-      <Addbtn />
     </div>
   );
 }
